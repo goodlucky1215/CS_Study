@@ -12,11 +12,9 @@
 
 ### 운영체제
 
-- [운영체제의 정의, 목적, 컴퓨터 시스템 내에서의 기능](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EA%B0%9C%EC%9A%94.md)
+- [운영체제의 정의, 목적, 컴퓨터 시스템 내에서의 기능](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/1.%20%EA%B0%9C%EC%9A%94/%EA%B8%80/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EA%B0%9C%EC%9A%94.md)
 
-- [운영체제의 기능인 CPU 스케줄링, 메모리 관리, 디스크 스케줄링과 운영체제의 종류](
-
-)
+- [운영체제의 기능인 CPU 스케줄링, 메모리 관리, 디스크 스케줄링과 운영체제의 종류](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/1.%20%EA%B0%9C%EC%9A%94/%EA%B8%80/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EA%B0%9C%EC%9A%942.md)
 
 ---
 

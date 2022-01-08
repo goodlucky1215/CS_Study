@@ -164,4 +164,6 @@ Q. RR스케줄링을 쓴다고 가정할때 기다리는 시간과 평균 기다
 
 [Algorithm Evaluation] - 어떤 알고리즘이 좋은지 확인하는 3가지 방법
 
-- Queueing models (5-1 20:30)
+1. Queueing models : queue에 도착한 시간과 처리 시간 등의 수식을 통해서 성능을 이론적으로 측정 => 옛날 방식
+2. Implementation(구현)&Measurement(성능 측정) : 실제 구현을 해서 측정
+3. Simulation(모의 실험) : 알고리즘을 모의 프로그램으로 작성 후에,후에 후에 trace(데이터들)를 입력하여 돌려보는 방법

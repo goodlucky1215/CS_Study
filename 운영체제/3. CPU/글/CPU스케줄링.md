@@ -22,16 +22,18 @@
 1. Running -> Blocked( ex) I/O 요청하는 시스템 콜)
 2. Running -> Ready( ex) timer interrupt)
 3. Blocked -> Ready( ex) I/O완료후 인터럽트 => 어떤 스케줄링인지에 따라 CPU를 제일 먼저 할당 받을 수도 있으니까)
-4. Terminate(프로세스 종료)  
-   *nonpreemptive(비선점, 강제로 빼앗지 않고 자진 반납) : 1,4  
-   *preemptive(선점, 강제로 빼앗음) : 2,3
+4. Terminate(프로세스 종료)
 
-[Scheduling 성능 척도]  
-CPU utilization(이용률) : CPU를 시간 안에 얼마나 이용했는지 => 퍼센트가 높을수록 좋음  
-Throughput(처리량) : CPU가 일정 시간 안에 프로세스를 얼마나 완료했는지 => 많이 처리할수록 좋음  
-Turnaround time(소요시간, 반환시간) : 프로세스가 CPU를 사용하고 기다린 모든 시간의 합 => 짧을수록 좋음  
-Waiting time(대기시간) : 프로세스가 들어오고 끝날때까지 기다린 모든 시간의 합 => 짧을수록 좋음  
-Response time(응답시간) : 프로세스가 최초로 CPU를 얻기까지 걸린 시간 => 짧을수록 좋음
+- nonpreemptive(비선점, 강제로 빼앗지 않고 자진 반납) : 1,4
+- \*preemptive(선점, 강제로 빼앗음) : 2,3
+
+[Scheduling 성능 척도]
+
+- CPU utilization(이용률) : CPU를 시간 안에 얼마나 이용했는지 => 퍼센트가 높을수록 좋음
+- Throughput(처리량) : CPU가 일정 시간 안에 프로세스를 얼마나 완료했는지 => 많이 처리할수록 좋음
+- Turnaround time(소요시간, 반환시간) : 프로세스가 CPU를 사용하고 기다린 모든 시간의 합 => 짧을수록 좋음
+- Waiting time(대기시간) : 프로세스가 들어오고 끝날때까지 기다린 모든 시간의 합 => 짧을수록 좋음
+- Response time(응답시간) : 프로세스가 최초로 CPU를 얻기까지 걸린 시간 => 짧을수록 좋음
 
 [Scheduling Algorithm]
 
@@ -73,27 +75,23 @@ Response time(응답시간) : 프로세스가 최초로 CPU를 얻기까지 걸�
 - CPU burst time이 가장 짧은 프로세스를 제일 먼저 스케줄
 - Average Waiting time이 모든 Scheduling Algorithm 중에서 가장 짧다. 특히 preemptive한 SRTF가 제일 짧다.
 - 2가지가 다 가능  
-  만약 CPU를 사용중이 프로세스의 CPU burst가 2초 남은 상황에서
-  CPU burst가 1초인 새로운 프로세스가 들어왔다면?
+   만약 CPU를 사용중이 프로세스의 CPU burst가 2초 남은 상황에서 CPU burst가 1초인 새로운 프로세스가 들어왔다면?  
+  a. nonpreemptive : 일단 CPU를 사용중인 프로세스가 있으면 끝까지 사용.
+  b. preemptive : 새로운 프로세스가 CPU를 뺏어감. 이를 **Shortest-Remaining-Time-First(SRTF)**라고 부른다.
 
-1. nonpreemptive : 일단 CPU를 사용중인 프로세스가 있으면 끝까지 사용.
-2. preemptive : 새로운 프로세스가 CPU를 뺏어감. 이를 **Shortest-Remaining-Time-First(SRTF)**라고 부른다.
-
-- 단점
-
-1. Starvation => CPU burst가 긴 프로세스는 영원히 CPU를 사용하지 못할 수가 있다.
-2. 프로세스들의 CPU burst time을 알 수가 없다. => 추정(estimate)만이 가능  
+- 단점  
+  a. Starvation => CPU burst가 긴 프로세스는 영원히 CPU를 사용하지 못할 수가 있다.
+  b. 프로세스들의 CPU burst time을 알 수가 없다. => 추정(estimate)만이 가능  
    과거의 CPU burst time으로 예측함.  
    예측하는 식 => (4-3강의의 30분~다시보면 됨)
 
-3) Priority Scheduling
+3. Priority Scheduling
 
 - 우선순위가 높은 프로세스부터 CPU할당.
 - 2가지가 다 가능  
-  만약 우선순위가 5인 프로세스가 CPU를 할당받아서 사용하고 있는데 우선순위가 3인 새로운 프로세스가 들어온다면?
-
-1. nonpreemptive : 일단 CPU를 사용중인 프로세스가 있으면 끝까지 사용.
-2. preemptive : 새로운 프로세스가 CPU를 뺏어감.
+  만약 우선순위가 5인 프로세스가 CPU를 할당받아서 사용하고 있는데 우선순위가 3인 새로운 프로세스가 들어온다면?  
+  a. nonpreemptive : 일단 CPU를 사용중인 프로세스가 있으면 끝까지 사용.
+  b. preemptive : 새로운 프로세스가 CPU를 뺏어감.
 
 - 단점  
   Starvation => 우선순위가 낮은 프로세스는 영원히 CPU를 사용하지 못할 수가 있다.
@@ -137,12 +135,11 @@ Q. RR스케줄링을 쓴다고 가정할때 기다리는 시간과 평균 기다
 - 각 큐는 독립적인 스케줄링 알고리즘을 가짐  
   foreground - RR/ background - FCFS  
   \*long job은 Context switch가 자주 일어나는게 더 비효율적이라서 FCFS
-- 2가지 방법
+- 2가지 방법  
+  a. 모든 foreground를 마치고, background를 실행 => background Stavation가능성이 있음.
+  b. CPU time을 적절한 비율로 할당 ex) foreground에는 80%, background에는 20%
 
-1. 모든 foreground를 마치고, background를 실행 => background Stavation가능성이 있음.
-2. CPU time을 적절한 비율로 할당 ex) foreground에는 80%, background에는 20%
-
-6) Multilevel Feedback Queue
+6. Multilevel Feedback Queue
 
 <p align="center">
   <img
@@ -166,4 +163,4 @@ Q. RR스케줄링을 쓴다고 가정할때 기다리는 시간과 평균 기다
 
 1. Queueing models : queue에 도착한 시간과 처리 시간 등의 수식을 통해서 성능을 이론적으로 측정 => 옛날 방식
 2. Implementation(구현)&Measurement(성능 측정) : 실제 구현을 해서 측정
-3. Simulation(모의 실험) : 알고리즘을 모의 프로그램으로 작성 후에,후에 후에 trace(데이터들)를 입력하여 돌려보는 방법
+3. Simulation(모의 실험) : 알고리즘을 모의 프로그램으로 작성 후에, trace(데이터들)를 입력하여 돌려보는 방법

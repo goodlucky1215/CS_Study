@@ -111,9 +111,10 @@ A. DeadLock Detection방법
     width="600"
     height="400"
   />
-(그림2)  
-- Allocation은 각 프로세스가 취한 자원의 갯수  
-- Request는 프로세스가 요청한 자원의 갯수  
+(그림2)
+
+- Allocation은 각 프로세스가 취한 자원의 갯수
+- Request는 프로세스가 요청한 자원의 갯수
 - Avaliable은 각 자원에 남은 자원의 갯수 => 여유자원이 있으면 그냥 무조건 줌  
   Request를 하지않은 프로세스들의 Allocation된 자원 갯수들을 계산을 해서 Request를 하는 프로세스들에게 줄 수 있는지를 가정을 한다. 그래서 만약 이 가정에 자원의 부족함이 없다면 DeadLock아니라고 하는 것이다.  
   DeadLock Detection and recovery그림1은 DeadLock이 아니지만,  

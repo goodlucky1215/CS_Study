@@ -164,3 +164,10 @@ Q. RR스케줄링을 쓴다고 가정할때 기다리는 시간과 평균 기다
 1. Queueing models : queue에 도착한 시간과 처리 시간 등의 수식을 통해서 성능을 이론적으로 측정 => 옛날 방식
 2. Implementation(구현)&Measurement(성능 측정) : 실제 구현을 해서 측정
 3. Simulation(모의 실험) : 알고리즘을 모의 프로그램으로 작성 후에, trace(데이터들)를 입력하여 돌려보는 방법
+
+---
+
+출처: http://www.kocw.net/home/cview.do?lid=21cfd4db05e27901
+출처: http://www.kocw.net/home/cview.do?lid=7041a5dde2dda6d0
+출처: http://www.kocw.net/home/cview.do?lid=572b2a726bd60a0e
+출처: http://www.kocw.net/home/cview.do?lid=3407e08b6a1e17e8

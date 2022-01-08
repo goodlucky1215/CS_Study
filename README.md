@@ -24,6 +24,8 @@
 
 - [burst Time&bound job, CPU Scheduling Algorithm, Algorithm Evaluation](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/3.%20CPU/%EA%B8%80/CPU%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md)
 
+- [DeadLock 발생 조건4가지, DeadLock 처리 방법](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/4.%20DeadLock/%EA%B8%80/deadlocks.md)
+
 ---
 
 ### 네트워크

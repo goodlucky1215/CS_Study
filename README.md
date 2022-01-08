@@ -28,6 +28,8 @@
 
 - [Logical address, Physical address, Paging, Segmentation](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/5.%20%EB%A9%94%EB%AA%A8%EB%A6%AC/%EA%B8%80/%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B4%80%EB%A6%AC.md)
 
+- [Demand Paging, page fault, Replacement Algorithm, Page Frame의 Allocation, Thrashing](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/5.%20%EB%A9%94%EB%AA%A8%EB%A6%AC/%EA%B8%80/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+
 ---
 
 ### 네트워크

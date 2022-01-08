@@ -26,6 +26,8 @@
 
 - [DeadLock 발생 조건4가지, DeadLock 처리 방법](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/4.%20DeadLock/%EA%B8%80/deadlocks.md)
 
+- [Logical address, Physical address, Paging, Segmentation](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/5.%20%EB%A9%94%EB%AA%A8%EB%A6%AC/%EA%B8%80/%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B4%80%EB%A6%AC.md)
+
 ---
 
 ### 네트워크

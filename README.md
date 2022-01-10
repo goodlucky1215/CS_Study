@@ -32,6 +32,8 @@
 
 - [File, File Protection, Allocation, UNIX&FAT 파일시스템, File에 접근하는 방법](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/6.%20%EC%8B%9C%EC%8A%A4%ED%85%9C/%EA%B8%80/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
 
+- [Disk Scheduling, 디스크 접근 시간 종류, Disk Scheduling Algorithm, RAID](https://github.com/goodlucky1215/CS_Study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/6.%20%EC%8B%9C%EC%8A%A4%ED%85%9C/%EA%B8%80/%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
+
 ---
 
 ### 네트워크
